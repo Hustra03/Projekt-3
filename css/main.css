@@ -27,6 +27,26 @@ body {
     grid-template-columns: 20vw 20vw 20vw 10vw;
     justify-content: center;
   }
+
+.lappar{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto 5vw;
+    background-color: blue;
+    
+    
+}
+
+
+.lapp {
+    display: flex;
+background-color: blanchedalmond;
+justify-content: center;
+margin: 5vw;
+}
+
+
+
   footer {
     padding: 0.3vw;
     background-color: #ff983a;
@@ -35,5 +55,7 @@ body {
   }
   .footergrid {
     display: grid;
-    grid-template-columns: auto 50vw 15vw auto;
+    grid-template-columns: auto auto;
+    
   }
+.footer1{grid-column-start: 2;}
