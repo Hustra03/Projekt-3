@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="quiz.js" defer></script>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="questions">
+      <div class="question">
+        <p>Vilket av följande HTML element får finnas inuti ett ul-element?</p>
+        <label>
+          <input name="question1" type="radio" value="0" checked />p
+        </label>
+        <label> <input name="question1" type="radio" value="0" />body </label>
+        <label> <input name="question1" type="radio" value="0" />ol </label>
+        <label> <input name="question1" type="radio" value="1" />li </label>
+      </div>
+      <div class="question">
+        <p>Vad står HTTP för?</p>
+        <label>
+          <input name="question2" type="radio" value="0" checked />HyperText
+          Transform Program
+        </label>
+        <label>
+          <input name="question2" type="radio" value="0" />Head Target Transfer
+          Protocol
+        </label>
+        <label>
+          <input name="question2" type="radio" value="1" />HyperText Transfer
+          Protocol
+        </label>
+        <label>
+          <input name="question2" type="radio" value="0" />Heading Towards Troll
+          Paradise
+        </label>
+      </div>
+      <div class="question">
+        <p>Vem uppfann HTML, HTTP och den första webbläsaren?</p>
+        <label>
+          <input name="question3" type="radio" value="1" checked />Tim Berners
+          Lee
+        </label>
+        <label>
+          <input name="question3" type="radio" value="0" />Nicholas Cage
+        </label>
+        <label>
+          <input name="question3" type="radio" value="0" />Hugh Jackman
+        </label>
+        <label>
+          <input name="question3" type="radio" value="0" />Channing Tatum
+        </label>
+      </div>
+      <div class="question">
+        <p>Vad heter kapten Jonathan Archers hund?</p>
+        <label>
+          <input name="question4" type="radio" value="0" checked />Spot
+        </label>
+        <label> <input name="question4" type="radio" value="0" />Jonesy </label>
+        <label> <input name="question4" type="radio" value="0" />Laika </label>
+        <label>
+          <input name="question4" type="radio" value="1" />Porthos
+        </label>
+      </div>
+      <button type="button" onclick="submitQuiz()">Rätta!</button>
+    </form>
+    <div class="result invisible">
+      <h2>Du fick <span class="correct-answers">0</span> rätta svar</h2>
+      <button type="button" onclick="resetQuiz()">Försök igen</button>
+    </div>
+  </body>
+</html>
