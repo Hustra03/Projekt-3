@@ -1,14 +1,23 @@
-function CreateNote(params) {
+let notes=0;
+
+function CreateNote() {
+    notes+=1;
     let text = document.getElementById('textbox').value;
-    var para = document.createElement("P");
-    var t = document.createTextNode("This is a paragraph.");
-    para.appendChild(t);
-    document.getElementById('Lappar').appendChild(newContent);
-    const help = document.getElementById("help");
-    const textbox = document.getElementById("textbox");
-    document.body.insertBefore(help,textbox);
+    var position = document.getElementById('inputdiv');
+    let textid = "lapp" + notes
+    position.insertAdjacentHTML('beforebegin', '<div class="lapp" id="'+textid+'"><p>'+text+'</p></div>');
+    
+}
 
+function DeleteNote()
+{
+    let number = document.getElementById('deleteNumber').value;
+    let node = document.getElementById('lappar');
+    let child = document.getElementById('lapp');
+    node.removeChild(child);
 
-
+    let d = document.getElementById("top");
+    let d_nested = document.getElementById("nested");
+    let throwawayNode = d.removeChild(d_nested);
 
 }
