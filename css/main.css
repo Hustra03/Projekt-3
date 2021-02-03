@@ -7,40 +7,25 @@ body {
   
   header {
     
-    background-color: #ff983a;
+    background-color: #1F707A;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
     font-size: 2.5vw;
     padding: 0.5vw;
   }
-  a {
-    text-decoration: underline;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-  }
-  a:hover {
-    text-decoration: underline;
-    color: #0044ff;
-  }
-  .nav {
-    display: grid;
-    grid-template-columns: 20vw 20vw 20vw 10vw;
-    justify-content: center;
-  }
-
+.name
+{    display: flex;
+  justify-content: center;}
 .lappar{
     display: grid;
     grid-template-columns: auto ;
     grid-template-rows: auto ;
-    background-color: blue;
-    
-    
+    background-color: #FAECCC;
 }
 
-
 .lapp {
-    display: flex;
-background-color: blanchedalmond;
+display: flex;
+background-color: #8DBFB1;
 justify-content: center;
 margin: 5vw;
 }
@@ -50,8 +35,7 @@ margin: 5vw;
 
   footer {
     padding: 0.3vw;
-    background-color: #ff983a;
-    margin-top: 1vw;
+    background-color: #1F707A;
     padding-bottom: 1vw;
   }
   .footergrid {

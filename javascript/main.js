@@ -1,23 +1,20 @@
-let notes=0;
+"use strict";
+addEventListener("click", DeleteNote)
 
 function CreateNote() {
-    notes+=1;
     let text = document.getElementById('textbox').value;
-    var position = document.getElementById('inputdiv');
-    let textid = "lapp" + notes
-    position.insertAdjacentHTML('beforebegin', '<div class="lapp" id="'+textid+'"><p>'+text+'</p></div>');
-    
+    if (text.trim() != "")
+    {
+        var position = document.getElementById('list');
+        position.insertAdjacentHTML('beforeend', '<li>'+text+'</li>');
+    }
 }
 
 function DeleteNote()
 {
-    let number = document.getElementById('deleteNumber').value;
-    let node = document.getElementById('lappar');
-    let child = document.getElementById('lapp');
-    node.removeChild(child);
-
-    let d = document.getElementById("top");
-    let d_nested = document.getElementById("nested");
-    let throwawayNode = d.removeChild(d_nested);
-
+    //let number = document.getElementById('deleteNumber').value;
+    let node = document.getElementById("list");
+    let child = event.target;
+    //let child = node.querySelector(selectors);
+    let throwawayNode = node.removeChild(child);
 }
