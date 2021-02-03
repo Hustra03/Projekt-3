@@ -12,7 +12,6 @@ function CreateNote() {
 
 function DeleteNote()
 {
-    //let number = document.getElementById('deleteNumber').value;
     let node = document.getElementById("list");
     let child = event.target;
     //let child = node.querySelector(selectors);
