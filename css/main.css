@@ -30,6 +30,9 @@ justify-content: center;
 margin: 5vw;
 }
 
+.textitem
+{background-color: #8DBFB1;}
+
 .delete
 {visibility: hidden;}
 

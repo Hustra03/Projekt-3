@@ -1,42 +1,38 @@
-"use strict";
-const LOCAL_STORAGE_KEY =  "app.todos";
-let listStorage = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || [];
+"use strict"; //använd modern javascript
+
+const LOCAL_STORAGE_KEY_TODOS =  "app.todos";
+let todos  = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY_TODOS)) || [];
+let listRoot = document.getElementById('list');
+
 
 function CreateNote() {
     let text = document.getElementById('textbox').value;
     if (text.trim() != "")
     {
-        var position = document.getElementById('list');
-        position.insertAdjacentHTML('beforeend', '<li>'+text+'</li>');
-        listStorage = ('beforeend', '<li>'+text+'</li>')
+        let todoListItem = document.createElement("li");
+        let list = document.getElementById('list');
+        todoListItem.innerText = text;
+        todoListItem.classList.add("textitem");
+        todoListItem.addEventListener("click", DeleteNote)
+        list.append(todoListItem);
         updateList();
     }
 }
 
-function DeleteNote()
+function DeleteNote(event)
 {
     let node = document.getElementById("list");
     let child = event.target;
-    //let child = node.querySelector(selectors);
     let throwawayNode = node.removeChild(child);
-    let listStorage = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || [];
+    todos = document.getElementById('list').innerHTML
     updateList();
 }
 
 function updateList() {
     saveList();
-    var position = document.getElementById('list');
-    //while (position.firstChild) {
-    //    position.removeChild(position.firstChild);}
-    position.insertAdjacentHTML('beforeend', listStorage);
     console.log(localStorage)
-
-
   }
   
   function saveList() {
-    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(listStorage));
+    localStorage.setItem(LOCAL_STORAGE_KEY_TODOS, JSON.stringify(todos));
   }
-
-  addEventListener("click", DeleteNote)
-  updateList();
