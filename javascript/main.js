@@ -27,10 +27,6 @@ function DeleteNote(event)
     updateList();
   }
 
-  function createElementFromHTML(htmlString) {
-    listRoot.innerHTML = htmlString;
-  }
-
 function updateList() {
     saveList();
     console.log(todos)
@@ -38,7 +34,11 @@ function updateList() {
 
   }
   
-  function saveList() {
+function createElementFromHTML(htmlString) {
+    listRoot.innerHTML = htmlString;
+  }
+
+function saveList() {
     localStorage.setItem(LOCAL_STORAGE_KEY_TODOS, JSON.stringify(todos));
   }
 
