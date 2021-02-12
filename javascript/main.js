@@ -6,7 +6,6 @@ let listRoot = document.getElementById('list');
 let x=0;
 listRoot.addEventListener("click", DeleteNote)
 
-
 function CreateNote(text) {
     if (text.trim() != "")
     {
@@ -31,8 +30,7 @@ function updateList() {
     saveList();
     console.log(todos)
     createElementFromHTML(todos)
-
-  }
+}
   
 function createElementFromHTML(htmlString) {
     listRoot.innerHTML = htmlString;
