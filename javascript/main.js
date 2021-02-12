@@ -21,9 +21,8 @@ function CreateNote(text) {
 
 function DeleteNote(event)
 {
-    let node = document.getElementById("list");
     let child = event.target;
-    node.removeChild(child);
+    listRoot.removeChild(child);
     todos = listRoot.innerHTML;
     updateList();
   }
