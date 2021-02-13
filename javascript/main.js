@@ -14,6 +14,7 @@ function CreateNote(text) {
         todoListItem.classList.add("textitem");
         listRoot.append(todoListItem)
         todos = listRoot.innerHTML;
+        document.getElementById('textbox').value = "";
         updateList();
     }
 }
