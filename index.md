@@ -15,8 +15,8 @@
     <main>
       <div class="lappar">
         <div class="lapp" id="#help">
-          <p>Welcome. Here are some instructions on how to use this service. Simply write in the empty note, and when you are done press sumbit.
-            You can press the delete button on the top right in order to remove a specific note, and when you submit one a new empty one will be created.</p>
+          <p>Welcome. Here are some instructions on how to use this service. Simply write in the empty note, and when you are done press submit.
+            Click on an empty note to erase it.</p>
         </div>
 
         <div class="lapp" >
