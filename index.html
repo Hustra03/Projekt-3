@@ -39,10 +39,8 @@
     <footer id="footer">
       <div class="footergrid">
         <div class="footer1">
-          <p>Hello</p>
-          <p>I am</p>
-          <p>Me</p>
-          <p></p>
+          <p>Created By Erik Paulinder</p>
+          <p>NTI Gymnasiet Stockholm, 2021</p>
         </div>
       </div>
     </footer>
