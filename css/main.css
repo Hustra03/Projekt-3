@@ -36,6 +36,10 @@ header {
 .textitem {
   background-color: #8dbfb1;
 }
+input[type="text"]
+{
+    width: 25vw;
+}
 
 .delete {
   visibility: hidden;
